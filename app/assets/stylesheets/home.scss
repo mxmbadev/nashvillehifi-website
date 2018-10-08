@@ -1,0 +1,83 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "all";
+
+header.home-bg{
+  background-image: url('/assets/home-bg-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  div.bg-text {
+    padding-top: 35vh;
+    h1, H4 {
+      color: #fff;
+      text-align: center;
+      letter-spacing: 12px;
+    }
+    div.text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 900px;
+      transform: translateX(-50%) translateY(-50%);
+      list-style: none;
+      text-align: center;
+    }
+    
+    
+    
+    div.text h1 {
+      display: inline-block;
+      float: left;
+      font-weight: 700;
+      font-size: 4em;
+      color: #fff;
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+      max-width: 2em;
+    }
+    div.text.hidden h1.spaced {
+      padding-left: 0;
+    }
+    div.text h1.spaced {
+      padding-left: 0.5em;
+    }
+    
+    div.text.hidden h1.ghost {
+      opacity: 0;
+      max-width: 0;
+    }
+
+    div.subText {
+      position: absolute;
+      opacity: 0;
+      top: 60%;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+    }
+    div.subText.hidden h4.ghost {
+      
+      max-width: 0;
+    }
+  }
+}
+
+// Footer
+
+footer.nashville-hifi-footer{
+  background: $black-grey;
+  border-top: solid 4px;
+  -webkit-animation: top-color-fade 10s infinite;
+  -moz-animation: top-color-fade 10s infinite;
+  animation: top-color-fade 10s infinite;
+  a{
+    color: $blue;
+  }
+}
