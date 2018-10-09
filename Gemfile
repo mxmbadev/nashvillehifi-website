@@ -30,11 +30,11 @@ gem 'materialize-sass'
 gem 'mail_form'
 gem 'jquery-rails'
 gem "jquery-slick-rails"
-gem "paperclip"
+gem 'paperclip'
 gem 'devise', '~> 4.4.3'
 gem "pg"
 gem "friendly_id"
-gem 'aws-sdk'
+gem "aws-sdk"
 gem "figaro"
 
 group :development, :test do
