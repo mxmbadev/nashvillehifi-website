@@ -34,7 +34,7 @@ gem "paperclip"
 gem 'devise', '~> 4.4.3'
 gem "pg"
 gem "friendly_id"
-gem 'aws-sdk',   '~> 2.6'
+gem 'aws-sdk'
 gem "figaro"
 
 group :development, :test do
