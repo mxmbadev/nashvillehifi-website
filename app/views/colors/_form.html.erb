@@ -1,0 +1,17 @@
+<%= form_for @color do |f| %>
+  <% if @color.errors.any?%>
+    <h2><%= pluralize(@color.errors.count, "error") %> prevented this client from saving:</h2>
+    <ul>
+      <% @color.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <%end%>
+    </ul>
+  <%end%>
+  <div class="col s12">
+    <div class="input-field col s12 m12">
+      <%= f.text_field :name, {class: 'validate'}%>
+      <label>Color Name:</label>
+    </div>    
+  </div>
+  <%= f.submit class: "btn" %>
+<% end %>

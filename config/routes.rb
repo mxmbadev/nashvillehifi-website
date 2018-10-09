@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   root 'home#index'
   get "qa" => "qa#index"
   resources :products
+  resources :colors
   resources :contacts, only: [:new, :create]
 end

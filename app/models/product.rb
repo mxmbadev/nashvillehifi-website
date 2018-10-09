@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
+  has_one :color
+  belongs_to :color
+
   has_attached_file :small_img, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "assets/images/:style/missing.png"
   validates_attachment_content_type :small_img, content_type: /\Aimage\/.*\z/
 
@@ -8,15 +11,15 @@ class Product < ApplicationRecord
   has_attached_file :big_img_two, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "assets/images/:style/missing.png"
   validates_attachment_content_type :big_img_two, content_type: /\Aimage\/.*\z/
 
-  PRODUCT_TYPE = [
-    "Streaming Audio",
-    "Amplifiers",
-    "Preamps",
-    "Integrated Amps",
-    "Speakers", 
-    "Cables and Interconnects",
-    "Headphones",
-    "Turntables"
-  ]
+  # PRODUCT_TYPE = [
+  #   "Streaming Audio",
+  #   "Amplifiers",
+  #   "Preamps",
+  #   "Integrated Amps",
+  #   "Speakers", 
+  #   "Cables and Interconnects",
+  #   "Headphones",
+  #   "Turntables"
+  # ]
 
 end

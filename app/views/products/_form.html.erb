@@ -15,38 +15,50 @@
     <div class="input-field col s8">
       <% if @product.product_type.present?%>
         <%= f.select(:product_type, options_for_select(
-          [ ['Streaming Audio', 'Streaming Audio'], 
+          [ 
+            ['Streaming Audio', 'Streaming Audio'], 
             ['Amplifiers', 'Amplifiers'],
             ['Preamps', 'Preamps'],
             ['Integrated Amps', 'Integrated Amps'],
             ['Speakers', 'Speakers'],
             ['Cables and Interconnects', 'Cables and Interconnects'],
             ['Headphones', 'Headphones'],
-            ['Turntables', 'Turntables'] ], @product.product_type )) %>
+            ['Turntables', 'Turntables'] 
+          ], @product.product_type )) %>
         <label>Product Type</label>
       <% else %>
         <%= f.select(:product_type, options_for_select(
-        [ ['Streaming Audio', 'Streaming Audio'], 
+        [ 
+          ['Streaming Audio', 'Streaming Audio'], 
           ['Amplifiers', 'Amplifiers'],
           ['Preamps', 'Preamps'],
           ['Integrated Amps', 'Integrated Amps'],
           ['Speakers', 'Speakers'],
           ['Cables and Interconnects', 'Cables and Interconnects'],
           ['Headphones', 'Headphones'],
-          ['Turntables', 'Turntables'] ])) %>
+          ['Turntables', 'Turntables'] 
+        ])) %>
         <label>Product Type</label>
       <% end %>
     </div>
     <div class="input-field col s4">
+      <%= f.collection_select(:color, Color.all, :id, :name) %>
+    </div>
+
+    <div class="input-field col s4">
       <% if @product.color.present?%>
         <%= f.select(:color, options_for_select(
-          [ ['White', 'White'], 
-            ['Black', 'Black'] ], @product.color )) %>
+          [ 
+            ['White', 'White'], 
+            ['Black', 'Black'] 
+          ], @product.color )) %>
         <%= f.label "Choose Image Background Color" %>
       <% else %>
         <%= f.select(:color, options_for_select(
-        [ ['White', 'White'], 
-          ['Black', 'Black'] ])) %>
+        [ 
+          ['White', 'White'], 
+          ['Black', 'Black'] 
+        ])) %>
         <%= f.label "Choose Image Background Color" %>
       <%end%>
     </div>
