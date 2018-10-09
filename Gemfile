@@ -34,6 +34,8 @@ gem "paperclip"
 gem 'devise', '~> 4.4.3'
 gem "pg"
 gem "friendly_id"
+gem 'aws-sdk',   '~> 2.6'
+gem "figaro"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
