@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_08_212046) do
+ActiveRecord::Schema.define(version: 2018_10_09_154703) do
 
   create_table "colors", force: :cascade do |t|
     t.string "name"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2018_10_08_212046) do
     t.datetime "big_img_two_updated_at"
     t.string "product_type"
     t.string "color"
+    t.integer "color_id"
   end
 
   create_table "users", force: :cascade do |t|

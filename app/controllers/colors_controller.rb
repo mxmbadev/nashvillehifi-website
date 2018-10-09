@@ -40,7 +40,7 @@ class ColorsController < ApplicationController
   private
 
   def color_params
-    params.require(:color).permit(:name)
+    params.require(:color).permit(:name, :color_id)
   end
 
   def find_color

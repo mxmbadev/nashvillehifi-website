@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-  has_one :color
+  
   belongs_to :color
 
   has_attached_file :small_img, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "assets/images/:style/missing.png"
