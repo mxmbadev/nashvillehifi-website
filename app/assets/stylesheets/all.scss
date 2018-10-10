@@ -88,3 +88,29 @@ $blue: #55c3d0;
   75% { background: #33d997; }
   100% { background: #7606ff; }
 }
+
+// Mobile menu icon
+
+@keyframes mobile-menu-color {
+  0% { color: #9074cd; }
+  25% { color: #fffc0c; }
+  50% { color: #0098e4; }
+  75% { color: #33d997; }
+  100% { color: #7606ff; }
+}
+
+@-webkit-keyframes mobile-menu-color {
+  0% { color: #9074cd; }
+  25% { color: #fffc0c; }
+  50% { color: #0098e4; }
+  75% { color: #33d997; }
+  100% { color: #7606ff; }
+}
+
+@-moz-keyframes mobile-menu-color {
+  0% { color: #9074cd; }
+  25% { color: #fffc0c; }
+  50% { color: #0098e4; }
+  75% { color: #33d997; }
+  100% { color: #7606ff; }
+}

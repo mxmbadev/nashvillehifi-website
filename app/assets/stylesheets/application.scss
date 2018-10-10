@@ -67,3 +67,39 @@ nav {
     letter-spacing: 2px;
   }
 }
+
+.main-text{
+  font-size: 35px;
+}
+
+// Mobile Menu Styles
+
+a.sidenav-trigger{
+  i{
+    font-size: 35px;
+    -webkit-animation: mobile-menu-color 10s infinite;
+    -moz-animation: mobile-menu-color 10s infinite;
+    animation: mobile-menu-color 10s infinite;
+  }
+}
+
+ul#slide-out.sidenav{
+  background: $black-grey;
+  color: #fff;
+  li a{
+    color: #fff;
+    font-weight: bold;
+    i{
+      color: #fff;
+    }
+  }
+  li{
+    @include transition(all, .4s);
+    &:hover{
+      @include transition(all, .4s);
+      -webkit-animation: nav-links-hover 10s infinite;
+      -moz-animation: nav-links-hover 10s infinite;
+      animation: nav-links-hover 10s infinite;
+    }
+  }
+}
