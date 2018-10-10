@@ -47,8 +47,6 @@ $(document).ready(function(){
       $(this).remove();
     })
   }, 3000);
-});
-
-$(document).ready(function(){
   $('select').formSelect();
+  $('.sidenav').sidenav();
 });
