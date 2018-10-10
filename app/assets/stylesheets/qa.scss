@@ -30,7 +30,7 @@ header.qa-bg{
 
 //mobile settings
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   header.qa-bg{
     background-attachment: scroll;
   }

@@ -28,7 +28,7 @@ header.contact-bg{
 
 // Mobile
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   header.contact-bg{
     background-attachment: scroll;
   }
