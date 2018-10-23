@@ -48,5 +48,4 @@ $(document).ready(function(){
     })
   }, 3000);
   $('select').formSelect();
-  $('.sidenav').sidenav();
 });
