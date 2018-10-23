@@ -17,6 +17,13 @@
  @import "all";
  @import 'slick';
  @import 'slick-theme';
+ @import 'about';
+ @import 'contacts'; 
+ @import 'home'; 
+ @import 'qa'; 
+ @import 'products';
+ @import 'slick-slider';
+ 
 
 
  .center-column{
@@ -84,7 +91,7 @@ a.sidenav-trigger{
 }
 
 .sidenav{
-  background: $black-grey;
+  background-color: $black-grey !important;
   color: #fff;
   li a{
     color: #fff;
