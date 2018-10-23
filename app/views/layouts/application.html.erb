@@ -26,6 +26,9 @@
     </div>
   <%end%>
 
+  <% content_for :head do %>
+    <meta name="turbolinks-cache-control" content="no-cache">
+  <% end %>
   <nav>
     <div class="container">
       <div class="nav-wrapper">
@@ -66,11 +69,7 @@
     <% end %>
   </ul>
 
-  <script>
-    $(document).on('ready page:change', function() {
-      $('.sidenav').sidenav();
-    });
-  </script>
+ 
 
   <body>
     <%= yield %>

@@ -12,7 +12,6 @@
 //
 //= require rails-ujs
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery.slick
 //= require activestorage
 //= require turbolinks
@@ -49,4 +48,17 @@ $(document).ready(function(){
     })
   }, 3000);
   $('select').formSelect();
+});
+
+$(document).on('ready turbolinks:load', function() {
+  var elem, instance;
+  elem = document.querySelector('#mobile-demo');
+  return instance = new M.Sidenav(elem, {});
+});
+
+$(document).on('ready turbolinks:before-visit', function() {
+  var elem, instance;
+  elem = document.querySelector('#mobile-demo');
+  instance = M.Sidenav.getInstance(elem);
+  return instance.destroy();
 });
