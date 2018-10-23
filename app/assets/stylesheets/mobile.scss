@@ -1,0 +1,26 @@
+// Mobile Settings
+
+// @media (min-width: 453px) and (max-width: 768px) {
+
+  // Mobile Devices <= 600px	
+  // Tablet Devices > 600px	
+  // Desktop Devices > 992px	
+  // Large Desktop Devices > 1200px
+
+// }
+
+@media screen and (max-width: 992px) {
+  header.home-bg{
+    background-attachment: scroll;
+  }
+  
+  header.qa-bg{
+    background-attachment: scroll;
+  }
+
+  header.contact-bg{
+    background-attachment: scroll;
+  }
+
+  
+}
