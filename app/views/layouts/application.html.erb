@@ -26,12 +26,12 @@
     </div>
   <%end%>
 
-
-  <nav class="hide-on-med-and-down">
+  <nav>
     <div class="container">
       <div class="nav-wrapper">
-        <a href="<% root_path %>" class="brand-logo"><img src="/assets/nashvilleHiFi-logo-white.png" alt="Nashville HiFi" style="max-width: 250px;"></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="<%= root_path %>" class="brand-logo"><img src="/assets/nashvilleHiFi-logo-white.png" alt="Nashville HiFi" style="max-width: 250px;"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="<%= root_path %>">Home</a></li>
           <% if current_page?(root_path) %>
             <li><a href="#about">About Us</a></li>
@@ -50,31 +50,21 @@
     </div>
   </nav>
 
-  <nav class="hide-on-large-only">
-    <div class="nav-wrapper">
-      <a href="<% root_path %>" class="brand-logo"><img src="/assets/nashvilleHiFi-logo-white.png" alt="Nashville HiFi" style="max-width: 250px;"></a>
-      <ul id="slide-out" class="sidenav">
-        <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
-        <div class="container">
-          <h5>Main Menu</h5>
-        </div>
-        <li><a href="<%= root_path %>">Home</a></li>
-        <% if current_page?(root_path) %>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#products">Products</a></li>
-        <% else %>
-          <li><a href="<%= root_path %>#about">About Us</a></li>
-          <li><a href="<%= root_path %>#products">Products</a></li>
-        <% end %>
-        <li><a href="/qa">QA</a></li>
-        <li><a href="<%= new_contact_path %>">Contact</a></li>
-        <% if user_signed_in? %>
-          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-        <% end %>
-      </ul>
-      <a href="#slide-out" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="<%= root_path %>">Home</a></li>
+    <% if current_page?(root_path) %>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+    <% else %>
+      <li><a href="<%= root_path %>#about">About Us</a></li>
+      <li><a href="<%= root_path %>#products">Products</a></li>
+    <% end %>
+    <li><a href="/qa">QA</a></li>
+    <li><a href="<%= new_contact_path %>">Contact</a></li>
+    <% if user_signed_in? %>
+      <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+    <% end %>
+  </ul>
 
   <script>
     $(document).on('ready page:change', function() {

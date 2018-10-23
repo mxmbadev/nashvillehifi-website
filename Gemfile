@@ -36,6 +36,7 @@ gem "pg"
 gem "friendly_id"
 gem "aws-sdk"
 gem "figaro"
+gem 'jquery-turbolinks'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
