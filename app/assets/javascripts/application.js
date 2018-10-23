@@ -50,15 +50,4 @@ $(document).ready(function(){
   $('select').formSelect();
 });
 
-$(document).on('ready turbolinks:load', function() {
-  var elem, instance;
-  elem = document.querySelector('#mobile-demo');
-  return instance = new M.Sidenav(elem, {});
-});
 
-$(document).on('ready turbolinks:before-visit', function() {
-  var elem, instance;
-  elem = document.querySelector('#mobile-demo');
-  instance = M.Sidenav.getInstance(elem);
-  return instance.destroy();
-});
