@@ -32,7 +32,9 @@
           <% @products.each do |prod| %>
             <% @prod_streaming = prod.product_type === "Streaming Audio" %>
             <% if @prod_streaming.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>
@@ -47,7 +49,9 @@
           <% @products.each do |prod| %>
             <% @prod_amps = prod.product_type === "Amplifiers" %>
             <% if @prod_amps.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>
@@ -63,7 +67,9 @@
           <% @products.each do |prod| %>
             <% @prod_preamps = prod.product_type === "Preamps" %>
             <% if @prod_preamps.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>
@@ -79,7 +85,9 @@
           <% @products.each do |prod| %>
             <% @prod_intamps = prod.product_type === "Integrated Amps" %>
             <% if @prod_intamps.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>
@@ -95,7 +103,9 @@
           <% @products.each do |prod| %>
             <% @prod_speakers = prod.product_type === "Speakers" %>
             <% if @prod_speakers.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>
@@ -111,7 +121,9 @@
           <% @products.each do |prod| %>
             <% @prod_cables = prod.product_type === "Cables and Interconnects" %>
             <% if @prod_cables.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>
@@ -127,7 +139,9 @@
           <% @products.each do |prod| %>
             <% @prod_headphones = prod.product_type === "Headphones" %>
             <% if @prod_headphones.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>
@@ -142,7 +156,9 @@
           <% @products.each do |prod| %>
             <% @prod_turntables = prod.product_type === "Turntables" %>
             <% if @prod_turntables.present? %>
-              <div><%= link_to image_tag(prod.small_img.url()), prod %></div>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
             <% end %>
           <% end %>
         </div>

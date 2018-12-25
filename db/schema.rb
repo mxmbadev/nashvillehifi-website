@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_09_193344) do
+ActiveRecord::Schema.define(version: 2018_12_19_161312) do
 
   create_table "colors", force: :cascade do |t|
     t.string "name"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2018_10_09_193344) do
     t.string "color"
     t.integer "color_id"
     t.string "slug"
+    t.string "brand"
     t.index ["slug"], name: "index_products_on_slug", unique: true
   end
 
