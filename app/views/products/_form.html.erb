@@ -39,6 +39,37 @@
     </div>
 
     <div class="input-field col s12 m6">
+      <% if @product.brand.present?%>
+        <%= f.select(:brand, options_for_select(
+          [ 
+            ['Bluesound', 'Bluesound'],
+            ['NAD', 'NAD'], 
+            ['Simaudio', 'Simaudio'],
+            ['Octave', 'Octave'],
+            ['Dynaudio', 'Dynaudio'],
+            ['KEF', 'KEF'],
+            ['Cardas', 'Cardas'],
+            ['Audeze', 'Audeze'],
+            ['Roon', 'Roon'],
+            ['E.A.T', 'E.A.T'] ], @product.brand )) %>
+        <label>Product Type</label>
+      <% else %>
+        <%= f.select(:brand, options_for_select(
+          [ 
+            ['Bluesound', 'Bluesound'],
+            ['NAD', 'NAD'], 
+            ['Simaudio', 'Simaudio'],
+            ['Octave', 'Octave'],
+            ['Dynaudio', 'Dynaudio'],
+            ['KEF', 'KEF'],
+            ['Cardas', 'Cardas'],
+            ['Audeze', 'Audeze'],
+            ['Roon Labs', 'Roon Labs'],
+            ['E.A.T', 'E.A.T'] ])) %>
+        <label>Product Brand</label>
+      <% end %>
+    </div>
+    <div class="input-field col s12 m6">
       <% if @product.color.present?%>
         <%= f.select(:color, options_for_select(
           [ ['White', 'White'], 
