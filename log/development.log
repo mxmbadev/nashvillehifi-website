@@ -18231,3 +18231,94 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 295ms (Views: 290.3ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-02 18:05:35 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.3ms)
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (31.0ms)
+  Rendered home/index.html.erb within layouts/application (48.8ms)
+Started GET "/" for ::1 at 2019-08-02 18:06:12 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.3ms)
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (26.8ms)
+  Rendered home/index.html.erb within layouts/application (34.2ms)
+Started GET "/" for ::1 at 2019-08-02 18:06:20 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.4ms)
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (4.7ms)
+  Rendered home/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 45342ms (Views: 45310.0ms | ActiveRecord: 0.8ms)
+
+
+Completed 200 OK in 233ms (Views: 230.8ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 8516ms (Views: 8514.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-02 18:09:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (79.8ms)
+Completed 200 OK in 171ms (Views: 154.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-02 18:09:49 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k+/nuPaeWxDB2/scyCBhMIZJ79K1dlXNPhhlBbCCbjCKPwtQFhuQ8XBnm85yB1FUiFPjcc0TXrOYqyVHC/OChA==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 130ms (ActiveRecord: 0.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k+/nuPaeWxDB2/scyCBhMIZJ79K1dlXNPhhlBbCCbjCKPwtQFhuQ8XBnm85yB1FUiFPjcc0TXrOYqyVHC/OChA==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 245ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-02 18:09:53 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zz6yBhh6CpC/FnE9OWNwz/prQlVs0jcq27GV0f1ayVYdvfVymL2CRpQGXi4MpzNRDhevTsPydZgoQCuicL/zzw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 114ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zz6yBhh6CpC/FnE9OWNwz/prQlVs0jcq27GV0f1ayVYdvfVymL2CRpQGXi4MpzNRDhevTsPydZgoQCuicL/zzw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 175ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-02 18:10:02 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aRXorFQhMmxZRvmtWluSYv9Jq3iGHxHu4+Bss6c/Hky7lq/Y1Oa6unJW1r5vn9H8CzVGYyk/U1wQEdLAKtok1Q==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 121ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aRXorFQhMmxZRvmtWluSYv9Jq3iGHxHu4+Bss6c/Hky7lq/Y1Oa6unJW1r5vn9H8CzVGYyk/U1wQEdLAKtok1Q==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 163ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
