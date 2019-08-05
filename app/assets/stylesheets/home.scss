@@ -87,5 +87,12 @@ footer.nashville-hifi-footer{
   a{
     color: $blue;
   }
+  .hours{
+    .time{
+      margin-top: 0px;
+    }
+    p{
+      margin-bottom: 0px;
+    }    
+  }
 }
-
