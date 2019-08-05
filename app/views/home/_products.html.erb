@@ -164,6 +164,112 @@
         </div>
       </div>
     </div>
+    <%
+=begin%>
+ <div id="focal" class="col s12">
+      <div class="container">
+        <h3>Focal</h3>
+      </div>
+      <div class="col s12 slick-slider">
+        <div class="multiple-items">
+          <% @products.each do |prod| %>
+            <% @prod_turntables = prod.brand === "Focal" %>
+            <% if @prod_turntables.present? %>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div id="naim" class="col s12">
+      <div class="container">
+        <h3>Naim</h3>
+      </div>
+      <div class="col s12 slick-slider">
+        <div class="multiple-items">
+          <% @products.each do |prod| %>
+            <% @prod_turntables = prod.brand === "Naim" %>
+            <% if @prod_turntables.present? %>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div id="yg-acoustics" class="col s12">
+      <div class="container">
+        <h3>YG Acoustics</h3>
+      </div>
+      <div class="col s12 slick-slider">
+        <div class="multiple-items">
+          <% @products.each do |prod| %>
+            <% @prod_turntables = prod.product_type === "YG Acoustics" %>
+            <% if @prod_turntables.present? %>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div id="d-agostino-master-audio" class="col s12">
+      <div class="container">
+        <h3>D'Agostino Master Audio</h3>
+      </div>
+      <div class="col s12 slick-slider">
+        <div class="multiple-items">
+          <% @products.each do |prod| %>
+            <% @prod_turntables = prod.product_type === "D'Agostino Master Audio" %>
+            <% if @prod_turntables.present? %>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div id="audio-quest" class="col s12">
+      <div class="container">
+        <h3>AudioQuest</h3>
+      </div>
+      <div class="col s12 slick-slider">
+        <div class="multiple-items">
+          <% @products.each do |prod| %>
+            <% @prod_turntables = prod.product_type === "AudioQuest" %>
+            <% if @prod_turntables.present? %>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div id="vpi" class="col s12">
+      <div class="container">
+        <h3>VPI</h3>
+      </div>
+      <div class="col s12 slick-slider">
+        <div class="multiple-items">
+          <% @products.each do |prod| %>
+            <% @prod_turntables = prod.product_type === "VPI" %>
+            <% if @prod_turntables.present? %>
+              <div><%= link_to image_tag(prod.small_img.url()), prod %>
+                <p style="text-align: center;"><%= prod.name%></p>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div> 
+<%
+=end%>
     <script>
       $('.multiple-items').slick({
         infinite: true,

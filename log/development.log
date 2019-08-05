@@ -18322,3 +18322,512 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 163ms (Views: 61.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-08-04 13:14:01 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (1.3ms)
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (23.4ms)
+  Rendered home/index.html.erb within layouts/application (59.7ms)
+Completed 200 OK in 533ms (Views: 515.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-04 13:14:28 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 175ms (Views: 169.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-04 13:14:33 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mz6PYsaAfpaGEU1mlMx1UMIrr9emThqAOukZoAhXB60/gVMPa1hNJ8nkpVI1bUeG61qx98M24ILsO4jTD0LLDw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 105ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mz6PYsaAfpaGEU1mlMx1UMIrr9emThqAOukZoAhXB60/gVMPa1hNJ8nkpVI1bUeG61qx98M24ILsO4jTD0LLDw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 191ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-04 13:14:37 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yeKRkOnpbvfJ6yOB5aa5S6OMl4HANKd6TyhAA8PSfFv+YJhITxpw/p0FoL/9xeVOy1/VSBgC5JSX/1dLuuXNyw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 104ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yeKRkOnpbvfJ6yOB5aa5S6OMl4HANKd6TyhAA8PSfFv+YJhITxpw/p0FoL/9xeVOy1/VSBgC5JSX/1dLuuXNyw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 203ms (Views: 105.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-04 13:14:53 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uOV0IxWM5CVeM83z7yipy5IcjFmB1hysvOkN9bahbuGPZ337s3/6LArdTs33S/XO+s/OkFngX0JkPhq9z5bfcQ==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 121ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uOV0IxWM5CVeM83z7yipy5IcjFmB1hysvOkN9bahbuGPZ337s3/6LArdTs33S/XO+s/OkFngX0JkPhq9z5bfcQ==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 209ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-04 13:15:01 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x3gF8NkDF5VRCXmsbVWbideya+zEheGtWhQHuwhRMubw+gwof/AJnAXn+pJ1NseMv2EpJRyzokOCwxDzcWaDdg==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 105ms (ActiveRecord: 0.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x3gF8NkDF5VRCXmsbVWbideya+zEheGtWhQHuwhRMubw+gwof/AJnAXn+pJ1NseMv2EpJRyzokOCwxDzcWaDdg==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 169ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/sign_up" for ::1 at 2019-08-04 13:19:31 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (60.8ms)
+Completed 200 OK in 987ms (Views: 965.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-08-04 13:19:41 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kQBt7QyKNjtMoegeig0mbUT1N2tgszYcjvjpOSX2Lj2mgmQ1qnkoMhhPayCSbnpoLCZ1oriFdfJWL/5xXMGfrQ==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "espinozab100@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "espinozab100@gmail.com"], ["encrypted_password", "$2a$11$wUNS5D5sbA8omDotbyR6UuuFtvekTCWrOKdn5L3w64D/q/Pc/TL/y"], ["created_at", "2019-08-04 18:19:41.524962"], ["updated_at", "2019-08-04 18:19:41.524962"]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2019-08-04 18:19:41.527917"], ["last_sign_in_at", "2019-08-04 18:19:41.527917"], ["current_sign_in_ip", "::1"], ["last_sign_in_ip", "::1"], ["updated_at", "2019-08-04 18:19:41.528242"], ["id", 2]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 154ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 13:19:41 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (17.4ms)
+  Rendered home/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 170ms (Views: 149.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/new" for ::1 at 2019-08-04 13:19:57 -0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (1.9ms)
+  Rendered products/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:26: syntax error, unexpected tSTRING_BEG
+            ['Focal'. 'Focal'],
+                      ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:26: syntax error, unexpected ']', expecting ')'
+            ['Focal'. 'Focal'],
+                             ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+            ['Naim', 'Naim'],
+                            ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+...YG Acoustics', 'YG Acoustics'],
+...                              ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:29: syntax error, unexpected ',', expecting ')'
+...o", "D'Agostino Master Audio"],
+...                              ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:30: syntax error, unexpected ',', expecting ')'
+...  ['AudioQuest', 'AudioQuest'],
+...                              ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:31: syntax error, unexpected ']', expecting ')'
+            ['VPI', 'VPI'] ], @product.product_type )) );...
+                           ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:31: syntax error, unexpected ')', expecting end
+...I'] ], @product.product_type )) );@output_buffer.safe_append...
+...                              ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:43: syntax error, unexpected tSTRING_BEG
+          ['Focal'. 'Focal'],
+                    ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:43: syntax error, unexpected ']', expecting ')'
+          ['Focal'. 'Focal'],
+                           ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:44: syntax error, unexpected ',', expecting ')'
+          ['Naim', 'Naim'],
+                          ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+...YG Acoustics', 'YG Acoustics'],
+...                              ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:46: syntax error, unexpected ',', expecting ')'
+...o", "D'Agostino Master Audio"],
+...                              ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:47: syntax error, unexpected ',', expecting ')'
+...  ['AudioQuest', 'AudioQuest'],
+...                              ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:48: syntax error, unexpected ']', expecting ')'
+          ['VPI', 'VPI'] ])) );@output_buffer.safe_appe...
+                         ^
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:50: syntax error, unexpected end, expecting ')'
+'.freeze;       end 
+                ^~~
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:168: syntax error, unexpected end, expecting ')'
+'.freeze; end ;
+          ^~~
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:170: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/brandon.espinoza/Documents/dev/nashvillehifi-website/app/views/products/_form.html.erb:172: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/products/_form.html.erb:26: syntax error, unexpected tSTRING_BEG
+app/views/products/_form.html.erb:26: syntax error, unexpected ']', expecting ')'
+app/views/products/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:29: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:30: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:31: syntax error, unexpected ']', expecting ')'
+app/views/products/_form.html.erb:31: syntax error, unexpected ')', expecting end
+app/views/products/_form.html.erb:43: syntax error, unexpected tSTRING_BEG
+app/views/products/_form.html.erb:43: syntax error, unexpected ']', expecting ')'
+app/views/products/_form.html.erb:44: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:46: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:47: syntax error, unexpected ',', expecting ')'
+app/views/products/_form.html.erb:48: syntax error, unexpected ']', expecting ')'
+app/views/products/_form.html.erb:50: syntax error, unexpected end, expecting ')'
+app/views/products/_form.html.erb:168: syntax error, unexpected end, expecting ')'
+app/views/products/_form.html.erb:170: syntax error, unexpected ensure, expecting ')'
+app/views/products/_form.html.erb:172: syntax error, unexpected end, expecting ')'
+app/views/products/new.html.erb:11:in `_app_views_products_new_html_erb__1510233482211678498_70187302409580'
+Started GET "/products/new" for ::1 at 2019-08-04 13:20:22 -0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (20.5ms)
+  Rendered products/new.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/products" for ::1 at 2019-08-04 13:22:25 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+hPhChmYp2V8+nZoeME9nnzfUqPcAOPLLyyVKplwPMHNkejSv2u5bCgU9VZgomGbFAwQagQ2oCX3+4Ji4EeNUQ==", "product"=>{"name"=>"Dev test Product", "product_type"=>"Focal", "brand"=>"Bluesound", "color"=>"White", "description"=>"This is a test description showing Lorem-hipsum:\r\nLorem ipsum dolor amet keytar church-key pour-over, meditation umami master cleanse tumeric tote bag trust fund. Hell of marfa iceland, la croix locavore neutra retro cloud bread poke etsy subway tile tousled single-origin coffee yr typewriter. Try-hard shaman man braid ennui selvage. Yuccie vegan chartreuse lo-fi wayfarers, hashtag before they sold out readymade umami flexitarian vinyl subway tile. Master cleanse selfies authentic succulents roof party echo park viral ethical craft beer try-hard cronut organic meh activated charcoal. +1 literally adaptogen, paleo occupy bespoke lo-fi DIY typewriter lyft roof party blog cray iPhone.", "small_img"=>#<ActionDispatch::Http::UploadedFile:0x00007fab82613778 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-12919-1xk55j1.png>, @original_filename="five-key-traits-of-a-proficient-hotelier@3x.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[small_img]\"; filename=\"five-key-traits-of-a-proficient-hotelier@3x.png\"\r\nContent-Type: image/png\r\n">, "big_img_one"=>#<ActionDispatch::Http::UploadedFile:0x00007fab82613610 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-12919-1l18feq.png>, @original_filename="aws-press-release.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[big_img_one]\"; filename=\"aws-press-release.png\"\r\nContent-Type: image/png\r\n">, "big_img_two"=>#<ActionDispatch::Http::UploadedFile:0x00007fab82613480 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-12919-19eky6d.png>, @original_filename="invoice.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[big_img_two]\"; filename=\"invoice.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-12919-1xk55j1.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-12919-psv89f.png
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-12919-psv89f.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c1ac7d6a3f71e039b76d8f2d74520fe820190804-12919-19tqfm0.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c1ac7d6a3f71e039b76d8f2d74520fe820190804-12919-19tqfm0.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-12919-psv89f.png[0]' 2>/dev/null
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.2ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/products_controller.rb:13:in `create'
+Started POST "/products" for ::1 at 2019-08-04 14:51:28 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+hPhChmYp2V8+nZoeME9nnzfUqPcAOPLLyyVKplwPMHNkejSv2u5bCgU9VZgomGbFAwQagQ2oCX3+4Ji4EeNUQ==", "product"=>{"name"=>"Dev test Product", "product_type"=>"Focal", "brand"=>"Bluesound", "color"=>"White", "description"=>"This is a test description showing Lorem-hipsum:\r\nLorem ipsum dolor amet keytar church-key pour-over, meditation umami master cleanse tumeric tote bag trust fund. Hell of marfa iceland, la croix locavore neutra retro cloud bread poke etsy subway tile tousled single-origin coffee yr typewriter. Try-hard shaman man braid ennui selvage. Yuccie vegan chartreuse lo-fi wayfarers, hashtag before they sold out readymade umami flexitarian vinyl subway tile. Master cleanse selfies authentic succulents roof party echo park viral ethical craft beer try-hard cronut organic meh activated charcoal. +1 literally adaptogen, paleo occupy bespoke lo-fi DIY typewriter lyft roof party blog cray iPhone.", "small_img"=>#<ActionDispatch::Http::UploadedFile:0x00007fb6fc5ca7a0 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-39091-1gla3d9.png>, @original_filename="five-key-traits-of-a-proficient-hotelier@3x.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[small_img]\"; filename=\"five-key-traits-of-a-proficient-hotelier@3x.png\"\r\nContent-Type: image/png\r\n">, "big_img_one"=>#<ActionDispatch::Http::UploadedFile:0x00007fb6fc5ca700 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-39091-btnh68.png>, @original_filename="aws-press-release.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[big_img_one]\"; filename=\"aws-press-release.png\"\r\nContent-Type: image/png\r\n">, "big_img_two"=>#<ActionDispatch::Http::UploadedFile:0x00007fb6fc5ca688 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-39091-1o3wz24.png>, @original_filename="invoice.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[big_img_two]\"; filename=\"invoice.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-39091-1gla3d9.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c1ac7d6a3f71e039b76d8f2d74520fe820190804-39091-32bdfh.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c1ac7d6a3f71e039b76d8f2d74520fe820190804-39091-32bdfh.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png[0]' -auto-orient -resize "300x300>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/946e89208a3a74bd11c4328f817ca64120190804-39091-iulpex'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/946e89208a3a74bd11c4328f817ca64120190804-39091-iulpex to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/f9f2a8297b183124613fc6e04fe6af9420190804-39091-1uhyf1r
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png[0]' -auto-orient -resize "100x100>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/946e89208a3a74bd11c4328f817ca64120190804-39091-1xraxih'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/946e89208a3a74bd11c4328f817ca64120190804-39091-1xraxih to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/459363e339b294eb07e409890157c1f720190804-39091-1a6iona
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-39091-btnh68.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-h2krt0.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-h2krt0.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png[0]' -auto-orient -resize "300x300>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/d79d08705b0aa9782f1027ff6245117320190804-39091-1yi1fa8'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/d79d08705b0aa9782f1027ff6245117320190804-39091-1yi1fa8 to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/4ab5b187eedfcc7a1e09e52b25ae2bb920190804-39091-1pc91zz
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png[0]' -auto-orient -resize "100x100>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/d79d08705b0aa9782f1027ff6245117320190804-39091-w65dly'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/d79d08705b0aa9782f1027ff6245117320190804-39091-w65dly to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/4e794b603633badb3c202116cfd1e5e220190804-39091-x08t04
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190804-39091-1o3wz24.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-1h15nlr.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-1h15nlr.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png[0]' -auto-orient -resize "300x300>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/60c90053e76862d6ead11b12c9eda52620190804-39091-bf7ixx'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/60c90053e76862d6ead11b12c9eda52620190804-39091-bf7ixx to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/73a3acc92b360d40e02dc5ecae83bbae20190804-39091-14j9uks
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png[0]' -auto-orient -resize "100x100>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/60c90053e76862d6ead11b12c9eda52620190804-39091-y91pl0'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/60c90053e76862d6ead11b12c9eda52620190804-39091-y91pl0 to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/d596e998eac009b3915191a78582918420190804-39091-1o8bhkq
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:15
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."id" IS NOT NULL AND "products"."slug" = ? LIMIT ?[0m  [["slug", "dev-test-product"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e51ed18c4ce811d6285a6d1c168b20d620190804-39091-aa9v1f.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c1ac7d6a3f71e039b76d8f2d74520fe820190804-39091-1ci81df.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c1ac7d6a3f71e039b76d8f2d74520fe820190804-39091-1ci81df.png'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-129vdw8.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-14mb849.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190804-39091-14mb849.png'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-azchju.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-1lbi4cd.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/e5f96ae00443877315fbb64fd3d9000520190804-39091-1lbi4cd.png'
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "created_at", "updated_at", "small_img_file_name", "small_img_content_type", "small_img_file_size", "small_img_updated_at", "big_img_one_file_name", "big_img_one_content_type", "big_img_one_file_size", "big_img_one_updated_at", "big_img_two_file_name", "big_img_two_content_type", "big_img_two_file_size", "big_img_two_updated_at", "product_type", "color", "slug", "brand") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dev test Product"], ["description", "This is a test description showing Lorem-hipsum:\r\nLorem ipsum dolor amet keytar church-key pour-over, meditation umami master cleanse tumeric tote bag trust fund. Hell of marfa iceland, la croix locavore neutra retro cloud bread poke etsy subway tile tousled single-origin coffee yr typewriter. Try-hard shaman man braid ennui selvage. Yuccie vegan chartreuse lo-fi wayfarers, hashtag before they sold out readymade umami flexitarian vinyl subway tile. Master cleanse selfies authentic succulents roof party echo park viral ethical craft beer try-hard cronut organic meh activated charcoal. +1 literally adaptogen, paleo occupy bespoke lo-fi DIY typewriter lyft roof party blog cray iPhone."], ["created_at", "2019-08-04 19:51:29.348725"], ["updated_at", "2019-08-04 19:51:29.348725"], ["small_img_file_name", "five-key-traits-of-a-proficient-hotelier_3x.png"], ["small_img_content_type", "image/png"], ["small_img_file_size", 23226], ["small_img_updated_at", "2019-08-04 19:51:28.650984"], ["big_img_one_file_name", "aws-press-release.png"], ["big_img_one_content_type", "image/png"], ["big_img_one_file_size", 27769], ["big_img_one_updated_at", "2019-08-04 19:51:28.877337"], ["big_img_two_file_name", "invoice.png"], ["big_img_two_content_type", "image/png"], ["big_img_two_file_size", 3465], ["big_img_two_updated_at", "2019-08-04 19:51:29.051856"], ["product_type", "Focal"], ["color", "White"], ["slug", "dev-test-product"], ["brand", "Bluesound"]]
+  ↳ app/controllers/products_controller.rb:15
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:15
+Redirected to http://localhost:3000/products/dev-test-product
+Completed 302 Found in 788ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/products/dev-test-product" for ::1 at 2019-08-04 14:51:29 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"dev-test-product"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."slug" = ? LIMIT ?[0m  [["slug", "dev-test-product"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:49
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:40
+  Rendered products/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 543ms (Views: 536.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 14:51:36 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (9.2ms)
+  Rendered home/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 120ms (Views: 117.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-04 14:53:14 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (6.4ms)
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 134ms (Views: 133.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 11:31:35 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (1.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (1.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (23.2ms)
+  Rendered home/index.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 391ms (Views: 372.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/products/new" for ::1 at 2019-08-05 11:31:43 -0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (133.8ms)
+  Rendered products/new.html.erb within layouts/application (139.6ms)
+Completed 200 OK in 229ms (Views: 224.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 11:36:27 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (4.6ms)
+  Rendered home/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 78ms (Views: 76.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 11:36:31 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (5.0ms)
+  Rendered home/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 94ms (Views: 92.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 11:37:04 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (3.6ms)
+  Rendered home/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 93ms (Views: 92.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for ::1 at 2019-08-05 11:37:15 -0500
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.1ms)
+  Rendered products/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for ::1 at 2019-08-05 11:37:51 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OEV9aX7eG7MrH7Q1vRAyW1t8t9FzdP0sDzcoKV/UF6TghgnfIX7h48T5Bec/COZZMJg8GrY0Ibvks8gO2eJEKA==", "product"=>{"name"=>"Dev Test For Focal", "product_type"=>"Amplifiers", "brand"=>"Focal", "color"=>"White", "description"=>"sdad", "small_img"=>#<ActionDispatch::Http::UploadedFile:0x00007fb6fb465960 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190805-39091-1gpdm0k.png>, @original_filename="aws-press-release.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[small_img]\"; filename=\"aws-press-release.png\"\r\nContent-Type: image/png\r\n">, "big_img_one"=>#<ActionDispatch::Http::UploadedFile:0x00007fb6fb4658e8 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190805-39091-1axl6fx.png>, @original_filename="aws-press-release.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[big_img_one]\"; filename=\"aws-press-release.png\"\r\nContent-Type: image/png\r\n">, "big_img_two"=>#<ActionDispatch::Http::UploadedFile:0x00007fb6fb465870 @tempfile=#<Tempfile:/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190805-39091-oda3sz.png>, @original_filename="aws-press-release.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"product[big_img_two]\"; filename=\"aws-press-release.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/brandon.espinoza/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190805-39091-1gpdm0k.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-bq2kl9.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-bq2kl9.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png[0]' -auto-orient -resize "300x300>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c9cb5d24a89f0ec09c8c31cb31a23bb820190805-39091-c20w4m'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c9cb5d24a89f0ec09c8c31cb31a23bb820190805-39091-c20w4m to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c59bc26241ef14fed58d374c7442878420190805-39091-15548uv
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png[0]' -auto-orient -resize "100x100>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c9cb5d24a89f0ec09c8c31cb31a23bb820190805-39091-v1aefu'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/c9cb5d24a89f0ec09c8c31cb31a23bb820190805-39091-v1aefu to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/4ae72b7a4b21b770fcc2b2ed0e159a5320190805-39091-1lz347c
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190805-39091-1axl6fx.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1jna1mp.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1jna1mp.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png[0]' -auto-orient -resize "300x300>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/05845e79e6eb4d870495654dfe00804320190805-39091-rcguat'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/05845e79e6eb4d870495654dfe00804320190805-39091-rcguat to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/0a6c57532aec37479b856b64c545703820190805-39091-1g5ud5m
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png[0]' -auto-orient -resize "100x100>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/05845e79e6eb4d870495654dfe00804320190805-39091-udeyrf'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/05845e79e6eb4d870495654dfe00804320190805-39091-udeyrf to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/ba5698a6fee443259a6c7229e91fb3d320190805-39091-jqfo1m
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/RackMultipart20190805-39091-oda3sz.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-8drpl0.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-8drpl0.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png[0]' -auto-orient -resize "300x300>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/444cc257468123195f9f46800690c57620190805-39091-4p24pg'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/444cc257468123195f9f46800690c57620190805-39091-4p24pg to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/60f7185c55babf2c627fd6248631830520190805-39091-1xx30vv
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png[0]'
+Command :: convert '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png[0]' -auto-orient -resize "100x100>" '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/444cc257468123195f9f46800690c57620190805-39091-e0z910'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/444cc257468123195f9f46800690c57620190805-39091-e0z910 to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/fb2a33b47ab242e7aa5c528bf1c27a9a20190805-39091-1tcs3d3
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:15
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."id" IS NOT NULL AND "products"."slug" = ? LIMIT ?[0m  [["slug", "dev-test-for-focal"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:15
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-809rgu.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-jkuxyg.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-jkuxyg.png'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-3o0gii.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-4u1mtg.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-4u1mtg.png'
+[paperclip] Trying to link /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1d4xj5y.png to /var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1b7k7o6.png
+Command :: file -b --mime '/var/folders/7s/rsqwjyqd0372_qfkd0skf8zrz736zk/T/22895256fe69433f53d35429a58903d220190805-39091-1b7k7o6.png'
+  [1m[36mProduct Create (1.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "created_at", "updated_at", "small_img_file_name", "small_img_content_type", "small_img_file_size", "small_img_updated_at", "big_img_one_file_name", "big_img_one_content_type", "big_img_one_file_size", "big_img_one_updated_at", "big_img_two_file_name", "big_img_two_content_type", "big_img_two_file_size", "big_img_two_updated_at", "product_type", "color", "slug", "brand") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dev Test For Focal"], ["description", "sdad"], ["created_at", "2019-08-05 16:37:51.901318"], ["updated_at", "2019-08-05 16:37:51.901318"], ["small_img_file_name", "aws-press-release.png"], ["small_img_content_type", "image/png"], ["small_img_file_size", 27769], ["small_img_updated_at", "2019-08-05 16:37:51.112694"], ["big_img_one_file_name", "aws-press-release.png"], ["big_img_one_content_type", "image/png"], ["big_img_one_file_size", 27769], ["big_img_one_updated_at", "2019-08-05 16:37:51.441700"], ["big_img_two_file_name", "aws-press-release.png"], ["big_img_two_content_type", "image/png"], ["big_img_two_file_size", 27769], ["big_img_two_updated_at", "2019-08-05 16:37:51.634677"], ["product_type", "Amplifiers"], ["color", "White"], ["slug", "dev-test-for-focal"], ["brand", "Focal"]]
+  ↳ app/controllers/products_controller.rb:15
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:15
+Redirected to http://localhost:3000/products/dev-test-for-focal
+Completed 302 Found in 820ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/products/dev-test-for-focal" for ::1 at 2019-08-05 11:37:51 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"dev-test-for-focal"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."slug" = ? LIMIT ?[0m  [["slug", "dev-test-for-focal"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:49
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/products/show.html.erb:40
+  Rendered products/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 140ms (Views: 132.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 11:37:57 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (4.8ms)
+  Rendered home/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 77ms (Views: 75.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-05 11:38:20 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/_about.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/_products.html.erb:9
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/home/_products.html.erb:32
+  Rendered home/_products.html.erb (4.4ms)
+  Rendered home/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.2ms)
+
+
